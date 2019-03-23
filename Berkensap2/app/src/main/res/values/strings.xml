@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Berkensap</string>
+    <string name="button_search">Search</string>
+    <string name="button_random">Random</string>
+    <string name="menu_save">Save</string>
+    <string name="menu_clear">Clear file</string>
+    <string name="menu_show">Show</string>
+    <string name="menu_sac">Sac</string>
+    <string name="menu_load">Load from file</string>
+    <string name="menu_replace">Replace</string>
+    <string name="menu_edit">Edit</string>
+    <string name="menu_file">Save to file</string>
+    <string name="menu_editTags">Edit Tags</string>
+</resources>

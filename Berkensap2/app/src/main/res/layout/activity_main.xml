@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:auto="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.patatos.sac.berkensap2.MainActivity">
+
+    <com.patatos.sac.blamathview.BlaMathView
+        android:id="@+id/formula"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        auto:engine="MathJax"
+        android:layout_above="@+id/button_random"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/button_random"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/input"
+        android:layout_alignParentEnd="true"
+        android:onClick="buttonRandom"
+        android:text="@string/button_random" />
+
+    <Button
+        android:id="@+id/button_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/button_random"
+        android:onClick="buttonSearch"
+        android:text="@string/button_search" />
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/button_random"
+        android:ems="10"
+        android:inputType="text" />
+
+</RelativeLayout>
